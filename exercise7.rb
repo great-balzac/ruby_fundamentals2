@@ -29,3 +29,12 @@ students[:cohort4] = 43
 puts "List has been updated with numbers for cohort 4\nDisplaying updated list."
 puts ""
 displaycohorts(students)
+
+# Display list of cohort names.
+puts "Displaying list of cohort names."
+puts ""
+students.each {
+	|key, value|
+	puts "#{key}"
+}
+puts ""
