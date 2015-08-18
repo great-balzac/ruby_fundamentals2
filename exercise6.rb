@@ -16,3 +16,13 @@ grocery_list << "rice"
 
 # Calls displaylist method on an array.
 displaylist(grocery_list)
+
+# Checks to see if the list includes "bananas",
+# if so it outputs "You need to pick up bananas."
+# Otherwise it says, "You do not need to pick up
+# bananas today."
+if grocery_list.include?("bananas")
+	puts "You need to pick up bananas."
+else
+	puts "You do not need to pick up bananas today."
+end
