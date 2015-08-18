@@ -41,8 +41,8 @@ puts ""
 
 # The classes have been expanded by 5% each,
 # modifies the list and redisplays the info.
-	puts "All class sizes have increased by 5%, here is the\nupdated class list."
-	puts ""
+puts "All class sizes have increased by 5%, here is the\nupdated class list."
+puts ""
 # Modifying the list.
 students.each {
 	|key, value| 
@@ -52,3 +52,17 @@ students.each {
 # Calling displaycohorts method on the updated list.
 displaycohorts(students)
 
+# Delete the 2nd cohort and redisplay the cohorts.
+puts "Second cohort has been cancelled, modifying list."
+puts ""
+students.delete(:cohort2)
+displaycohorts(students)
+
+# Calculate the total number of students in all
+# cohorts combined.
+sum = 0
+students.each {
+	|key, value|
+	sum += value
+}
+puts "There are a total of #{sum} students in all cohorts combined."
