@@ -26,3 +26,11 @@ if grocery_list.include?("bananas")
 else
 	puts "You do not need to pick up bananas today."
 end
+
+# Display the second item in the list.
+puts grocery_list[1]
+
+# Sorts grocery list in alphabetical order
+# and outputs it again.
+grocery_list.sort!
+displaylist(grocery_list)
