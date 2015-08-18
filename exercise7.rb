@@ -38,3 +38,17 @@ students.each {
 	puts "#{key}"
 }
 puts ""
+
+# The classes have been expanded by 5% each,
+# modifies the list and redisplays the info.
+	puts "All class sizes have increased by 5%, here is the\nupdated class list."
+	puts ""
+# Modifying the list.
+students.each {
+	|key, value| 
+	value += (value * 0.05)
+	students[key] = value
+}
+# Calling displaycohorts method on the updated list.
+displaycohorts(students)
+
